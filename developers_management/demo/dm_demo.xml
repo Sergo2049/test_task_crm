@@ -46,7 +46,7 @@
     <record id="developer_4" model="dm.developer">
         <field name="name">Gearge Michael</field>
         <field name="type">back_end</field>
-        <field name="phone">1234564</field>
+        <field name="phone">380996667744</field>
         <field name="email">dev4@example.com</field>
         <field name="address">Developer Address 4</field>
         <field name="birth_date">1990-01-01</field>
