@@ -10,7 +10,7 @@
                     <field name="name"/>
                     <field name="type"/>
                     <field name="global_identification"/>
-                    <field name="phone"/>
+                    <field name="phone" attrs="{'invisible': [('type', '=', 'out_stuff')]}"/>
                     <field name="email"/>
                     <field name="address"/>
                     <field name="birth_date"/>
