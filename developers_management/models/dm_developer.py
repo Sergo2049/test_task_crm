@@ -30,6 +30,10 @@ class Developer(models.Model):
 
     company_id = fields.Many2one('dm.company', required=True)
 
+    # The name must be unique
+    _sql_constraints = [
+        ('unique_developer_name', 'UNIQUE(name)', 'The name must be unique!')
+    ]
     @api.depends('name', 'type')
     def _compute_global_identification(self):
         for rec in self:
