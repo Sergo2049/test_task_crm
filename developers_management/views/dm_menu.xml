@@ -2,8 +2,20 @@
 <odoo>
 
     <record model="ir.ui.menu" id="dm_menu_root">
-        <field name="name">Developers</field>
+        <field name="name">Developers Management</field>
         <field name="sequence" eval="10"/>
+    </record>
+
+    <record model="ir.ui.menu" id="dm_menu_root_developer">
+        <field name="name">Developers</field>
+        <field name="parent_id" ref="dm_menu_root"/>
+        <field name="sequence" eval="20"/>
+    </record>
+
+    <record model="ir.ui.menu" id="dm_menu_root_company">
+        <field name="name">Companies</field>
+        <field name="parent_id" ref="dm_menu_root"/>
+        <field name="sequence" eval="30"/>
     </record>
 
 </odoo>

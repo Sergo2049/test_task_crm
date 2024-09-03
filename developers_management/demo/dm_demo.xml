@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="company_1" model="dm.company">
+        <field name="name">Trust Creation</field>
+        <field name="address">Address 1</field>
+    </record>
+    <record id="company_2" model="dm.company">
+        <field name="name">Dream Team</field>
+        <field name="address">Address 2</field>
+    </record>
+    <record id="company_3" model="dm.company">
+        <field name="name">Coders</field>
+        <field name="address">Address 3</field>
+    </record>
+    
+    <record id="developer_1" model="dm.developer">
+        <field name="name">John Smith</field>
+        <field name="type">front_end</field>
+        <field name="phone">1234561</field>
+        <field name="email">dev1@example.com</field>
+        <field name="address">Developer Address 1</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Senior JS Developer</field>
+        <field name="company_id" ref="company_1"/>
+    </record>
+    <record id="developer_2" model="dm.developer">
+        <field name="name">Eva May</field>
+        <field name="type">back_end</field>
+        <field name="phone">1234562</field>
+        <field name="email">dev2@example.com</field>
+        <field name="address">Developer Address 2</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Junior JS Developer</field>
+        <field name="company_id" ref="company_1"/>
+    </record>
+    <record id="developer_3" model="dm.developer">
+        <field name="name">Developer 3</field>
+        <field name="type">front_end</field>
+        <field name="phone">1234563</field>
+        <field name="email">dev3@example.com</field>
+        <field name="address">Developer Address 3</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Middle JS Developer</field>
+        <field name="company_id" ref="company_2"/>
+    </record>
+    <record id="developer_4" model="dm.developer">
+        <field name="name">Gearge Michael</field>
+        <field name="type">back_end</field>
+        <field name="phone">1234564</field>
+        <field name="email">dev4@example.com</field>
+        <field name="address">Developer Address 4</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Senior Java Developer</field>
+        <field name="company_id" ref="company_2"/>
+    </record>
+    <record id="developer_5" model="dm.developer">
+        <field name="name">Tom Foster 5</field>
+        <field name="type">front_end</field>
+        <field name="phone">1234565</field>
+        <field name="email">dev5@example.com</field>
+        <field name="address">Developer Address 5</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Middle Python Developer</field>
+        <field name="company_id" ref="company_3"/>
+    </record>
+    <record id="developer_6" model="dm.developer">
+        <field name="name">Jack Black</field>
+        <field name="type">back_end</field>
+        <field name="phone">1234566</field>
+        <field name="email">dev6@example.com</field>
+        <field name="address">Developer Address 6</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Bussines Analystr</field>
+        <field name="company_id" ref="company_3"/>
+    </record>
+    <record id="developer_7" model="dm.developer">
+        <field name="name">John Jameson</field>
+        <field name="type">front_end</field>
+        <field name="phone">1234567</field>
+        <field name="email">dev7@example.com</field>
+        <field name="address">Developer Address 7</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Junior Python Developer</field>
+        <field name="company_id" ref="company_1"/>
+    </record>
+    <record id="developer_8" model="dm.developer">
+        <field name="name">Maria Brown</field>
+        <field name="type">back_end</field>
+        <field name="phone">1234568</field>
+        <field name="email">dev8@example.com</field>
+        <field name="address">Developer Address 8</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Senior Data Analyst</field>
+        <field name="company_id" ref="company_2"/>
+    </record>
+    <record id="developer_9" model="dm.developer">
+        <field name="name">Helen Smith</field>
+        <field name="type">front_end</field>
+        <field name="phone">1234569</field>
+        <field name="email">dev9@example.com</field>
+        <field name="address">Developer Address 9</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Senior Python Developer</field>
+        <field name="company_id" ref="company_3"/>
+    </record>
+    <record id="developer_10" model="dm.developer">
+        <field name="name">Andrew Davis</field>
+        <field name="type">back_end</field>
+        <field name="phone">1234570</field>
+        <field name="email">dev10@example.com</field>
+        <field name="address">Developer Address 10</field>
+        <field name="birth_date">1990-01-01</field>
+        <field name="job_title">Middle Java Developer</field>
+        <field name="company_id" ref="company_3"/>
+    </record>
+</odoo>
