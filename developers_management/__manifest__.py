@@ -1,0 +1,15 @@
+{
+    'name': 'Developers Management',
+    'version': '16.0.1.0.0',
+    'license': 'AGPL-3',
+    'author': 'Serhii Vydysh',
+    'depends': [],
+    'data': ['security/ir.model.access.csv',
+             'views/dm_menu.xml',
+             'views/developer_view.xml'],
+    'demo': [],
+    'application': False,
+    'installable': True,
+    'auto_install': False,
+    'readme': 'README.rst',
+}

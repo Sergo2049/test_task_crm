@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.menu" id="dm_menu_root">
+        <field name="name">Developers</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+</odoo>

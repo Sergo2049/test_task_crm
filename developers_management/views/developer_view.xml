@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record model='ir.ui.view' id="dm_developer_view_form">
+        <field name="name">dm.developer.view.form</field>
+        <field name="model">dm.developer</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="global_identification"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                    <field name="address"/>
+                    <field name="birth_date"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record model='ir.ui.view' id="dm_developer_tree_form">
+        <field name="name">dm.developer.view.tree</field>
+        <field name="model">dm.developer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="global_identification"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="address"/>
+                <field name="birth_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window"  id="dm_developer_act_window">
+        <field name="name">View Developers</field>
+        <field name="res_model">dm.developer</field>
+        <field name="view_mode">tree,form</field>
+<!--        <field name="domain">[]</field>-->
+<!--        <field name="context">{}</field>-->
+    </record>
+
+    <record model="ir.ui.menu" id="dm_developer_menu">
+        <field name="name">Developers</field>
+        <field name="parent_id" ref="dm_menu_root"/>
+        <field name="action" ref="dm_developer_act_window"/>
+        <field name="sequence" eval="20"/>
+    </record>
+
+<!--        <record model="ir.ui.menu" id="dm_developer_menu">-->
+<!--            <field name="name">Developers</field>-->
+<!--            <field name="sequence" eval="20"/>-->
+<!--        </record>-->
+</odoo>
