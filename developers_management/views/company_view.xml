@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
+
     <record model='ir.ui.view' id="dm_company_view_form">
         <field name="name">dm.company.view.form</field>
         <field name="model">dm.company</field>
@@ -8,7 +9,14 @@
             <form>
                 <group>
                     <field name="name"/>
-                    <field name="developer_ids"/>
+                    <field name="developer_ids">
+                        <tree>
+                            <field name="name"/>
+                            <field name="type"/>
+                            <field name="phone"/>
+                            <field name="job_title"/>
+                        </tree>
+                    </field>
                 </group>
             </form>
         </field>
@@ -25,27 +33,20 @@
         </field>
     </record>
 
-<!--    <record model="ir.ui.view" id="dm_developer_view_search">-->
-<!--        <field name="name">dm.developer.view.search</field>-->
-<!--        <field name="model">dm.developer</field>-->
-<!--        <field name="arch" type="xml">-->
-<!--            <search>-->
-<!--                <field name="name" operator="ilike"/>-->
-<!--                <field name="phone" operator="ilike"/>-->
-<!--                <field name="type" operator="ilike"/>-->
-<!--                <filter string="Type" name="filter_type"-->
-<!--                        context="{'group_by':'type'}"/>-->
-<!--            </search>-->
-<!--        </field>-->
-
-<!--    </record>-->
+<!--ACTIONS-->
     <record model="ir.actions.act_window"  id="dm_company_act_window">
         <field name="name">Company</field>
         <field name="res_model">dm.company</field>
         <field name="view_mode">tree,form</field>
-<!--        <field name="context">{'search_default_filter_type': 1}</field>-->
     </record>
 
+    <record model="ir.actions.act_window" id="action_add_company">
+        <field name="name">Add Company</field>
+        <field name="res_model">dm.company</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'create': True}</field>
+    </record>
+<!--    MENU-->
     <record model="ir.ui.menu" id="dm_company_menu">
         <field name="name">View Companies</field>
         <field name="parent_id" ref="dm_menu_root_company"/>
@@ -53,8 +54,11 @@
         <field name="sequence" eval="10"/>
     </record>
 
-<!--        <record model="ir.ui.menu" id="dm_developer_menu">-->
-<!--            <field name="name">Developers</field>-->
-<!--            <field name="sequence" eval="20"/>-->
-<!--        </record>-->
+    <record model="ir.ui.menu" id="dm_company_add_menu">
+        <field name="name">Add Company</field>
+        <field name="parent_id" ref="dm_menu_root_company"/>
+        <field name="action" ref="action_add_company"/>
+        <field name="sequence" eval="20"/>
+    </record>
+
 </odoo>

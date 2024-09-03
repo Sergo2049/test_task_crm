@@ -16,7 +16,7 @@
     <record id="developer_1" model="dm.developer">
         <field name="name">John Smith</field>
         <field name="type">front_end</field>
-        <field name="phone">1234561</field>
+        <field name="phone">380634445566</field>
         <field name="email">dev1@example.com</field>
         <field name="address">Developer Address 1</field>
         <field name="birth_date">1990-01-01</field>
@@ -26,7 +26,7 @@
     <record id="developer_2" model="dm.developer">
         <field name="name">Eva May</field>
         <field name="type">back_end</field>
-        <field name="phone">1234562</field>
+        <field name="phone">380975556677</field>
         <field name="email">dev2@example.com</field>
         <field name="address">Developer Address 2</field>
         <field name="birth_date">1990-01-01</field>
@@ -36,7 +36,7 @@
     <record id="developer_3" model="dm.developer">
         <field name="name">Developer 3</field>
         <field name="type">front_end</field>
-        <field name="phone">1234563</field>
+        <field name="phone">380997776622</field>
         <field name="email">dev3@example.com</field>
         <field name="address">Developer Address 3</field>
         <field name="birth_date">1990-01-01</field>
@@ -55,8 +55,8 @@
     </record>
     <record id="developer_5" model="dm.developer">
         <field name="name">Tom Foster 5</field>
-        <field name="type">front_end</field>
-        <field name="phone">1234565</field>
+        <field name="type">fullstack</field>
+        <field name="phone">380981112233</field>
         <field name="email">dev5@example.com</field>
         <field name="address">Developer Address 5</field>
         <field name="birth_date">1990-01-01</field>
@@ -66,7 +66,7 @@
     <record id="developer_6" model="dm.developer">
         <field name="name">Jack Black</field>
         <field name="type">back_end</field>
-        <field name="phone">1234566</field>
+        <field name="phone">380668885544</field>
         <field name="email">dev6@example.com</field>
         <field name="address">Developer Address 6</field>
         <field name="birth_date">1990-01-01</field>
@@ -75,8 +75,8 @@
     </record>
     <record id="developer_7" model="dm.developer">
         <field name="name">John Jameson</field>
-        <field name="type">front_end</field>
-        <field name="phone">1234567</field>
+        <field name="type">out_stuff</field>
+        <field name="phone">380913336677</field>
         <field name="email">dev7@example.com</field>
         <field name="address">Developer Address 7</field>
         <field name="birth_date">1990-01-01</field>
@@ -86,7 +86,7 @@
     <record id="developer_8" model="dm.developer">
         <field name="name">Maria Brown</field>
         <field name="type">back_end</field>
-        <field name="phone">1234568</field>
+        <field name="phone">380675558833</field>
         <field name="email">dev8@example.com</field>
         <field name="address">Developer Address 8</field>
         <field name="birth_date">1990-01-01</field>
@@ -95,8 +95,8 @@
     </record>
     <record id="developer_9" model="dm.developer">
         <field name="name">Helen Smith</field>
-        <field name="type">front_end</field>
-        <field name="phone">1234569</field>
+        <field name="type">out_stuff</field>
+        <field name="phone">380997776633</field>
         <field name="email">dev9@example.com</field>
         <field name="address">Developer Address 9</field>
         <field name="birth_date">1990-01-01</field>
@@ -105,8 +105,8 @@
     </record>
     <record id="developer_10" model="dm.developer">
         <field name="name">Andrew Davis</field>
-        <field name="type">back_end</field>
-        <field name="phone">1234570</field>
+        <field name="type">fullstack</field>
+        <field name="phone">380981118855</field>
         <field name="email">dev10@example.com</field>
         <field name="address">Developer Address 10</field>
         <field name="birth_date">1990-01-01</field>
