@@ -13,7 +13,7 @@ class Developer(models.Model):
         ('fullstack', 'fullstack'),
         ('out_stuff', 'out-stuff')
     ],
-    required=True)
+        required=True)
 
     global_identification = fields.Char(
         compute='_compute_global_identification')

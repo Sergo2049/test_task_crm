@@ -2,7 +2,7 @@ from odoo import fields, models
 
 
 class Company(models.Model):
-    _name='dm.company'
+    _name = 'dm.company'
     _description = 'Developers Management Company'
 
     name = fields.Char()

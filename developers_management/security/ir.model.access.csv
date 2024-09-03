@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-developers_management.access_dm_developer,access_dm_developer,developers_management.model_dm_developer,base.group_user,1,0,1,0
-developers_management.access_dm_company,access_dm_company,developers_management.model_dm_company,base.group_user,1,1,1,0
+developers_management.access_dm_developer_user,access_dm_developer_user,developers_management.model_dm_developer,base.group_user,1,0,1,0
+developers_management.access_dm_company_user,access_dm_company_user,developers_management.model_dm_company,base.group_user,1,0,1,0
+developers_management.access_dm_developer_admin,access_dm_developer_admin,developers_management.model_dm_developer,base.group_system,1,1,1,1
+developers_management.access_dm_company_admin,access_dm_company_admin,developers_management.model_dm_company,base.group_system,1,1,1,1
